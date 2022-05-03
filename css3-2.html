@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+body{
+    font-family: 맑은 고딕;
+    font-size: 12px;
+    color: #333;}
+    img{border: 0px;}
+    ul,li{list-style: none;}
+    a{text-decoration: none; color: #333;}
+
+    #margin{width:100%;}
+    #header{float: left;width: 100%; height: 120px;
+     padding-top: 80px;box-sizing: border-box;}
+
+    #header nav{margin-left: 820px;width: 1000px;height: 50px;}
+    #header nav li{
+        float: left;width: 20%; font-size: 22px;
+        text-align:center; line-height: 50px;
+    }
+    #header nav li a{
+        display: block;width: 100%;height: 50px;
+    }
+    #header nav li a:hover{color: black;font-weight: bolder}
+    #header nav:hover + .submenu,.submenu:hover{ height:250px;} 
+
+    #mainimg{ float: left; width:1610;height: 860px;
+    background-color: brown;}
+    .submenu{width: 100%;height: 0px;
+    background-color: rgb(108, 104, 104);
+    position: absolute; top: 120px;left: 0;
+    z-index:9999;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header">
+                <div class="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Artist</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Audition</a></li>
+                    </ul>
+                </nav>
+                <div class="submenu"></div>
+            </header>
+            
+        </main>
+        <section id="mainimg"></section>
+    </div>
+</body>
+</html>
